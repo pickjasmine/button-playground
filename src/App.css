@@ -3,7 +3,7 @@
     width: 100vw;
     background: rgb(7, 30, 42);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .container > div {
@@ -14,10 +14,10 @@
 }
 
 .container > div > button {
-    margin: 4px;
+    margin: 8px;
 }
 
-.button {
+.button, .medium {
     width: fit-content;
     cursor: pointer;
     border: none;
@@ -66,30 +66,20 @@
 }
 
 .small {
-    border-radius: 2px;
     font-size: 12px;
     line-height: 16px;
     padding: 2px 4px;
 }
 
-.medium {
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 4px 8px;
-}
-
 .large {
-    border-radius: 6px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 32px;
+    line-height: 36px;
     padding: 6px 10px;
 }
 
 .specialButton {
     background: goldenrod;
     color: white;
-    border-radius: 8px;
     font-size: 32px;
     line-height: 36px;
     padding: 10px 14px;
