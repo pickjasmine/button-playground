@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import {ColorfulButton} from "./SpecialButtons/ColorfulButton";
+import {SizedButton} from "./SpecialButtons/SizedButton";
+import {Button} from "./Button";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const colors = ['blue', 'red', 'green', 'yellow']
+    const sizes = ['small', 'medium', 'large']
+
+    return (
+        <div className="container">
+            <div>
+                <Button
+                    onClick={() => console.log('...from the other side')}
+                    text="Hello"
+                />
+            </div>
+            <div>
+                {
+                    colors.map((color) => (
+                        <ColorfulButton color={color}/>
+                    ))
+                }
+            </div>
+            <div>
+                {
+                    sizes.map((size) => (
+                        <SizedButton size={size}/>
+                    ))
+                }
+            </div>
+        </div>
+    );
 }
 
 export default App;
+git
