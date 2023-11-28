@@ -1,5 +1,11 @@
 export const Button = (props) => {
-    const {buttonType = 'button', className, onClick, content, children, ...rest} = props
+    const {
+        buttonType = 'button',
+        className,
+        onClick,
+        fancyContent,
+        children,
+        ...rest} = props
 
     // do any JS thing here
 
